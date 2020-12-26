@@ -9,5 +9,24 @@ function handleClick(e) {
 
 /* End Given Code, don't edit above here...*/
 
-/* Write your implementation of greet() */
+/* Write your implementationof greet() */
+//let hours= ' '+ ':'+ ' ';
+//let nb = Number(hours);
+const greets = ["Good Morning","Good Afternoon","Good Evening"];
+function greet(hours){
+  let hour = parseInt(hours,10)
+  if(hour < 12){
+  return greets[0];}
+  else 
+  if(hour >= 12 && hour<=17){
+  return greets[1];}
+  else if(hour>17)
+  return greets[2];
+}
 /* Write your implementation of displayMessage() */
+
+ function displayMessage(message){
+   document.getElementById('greeting').innerText =message;
+   
+   
+ }
